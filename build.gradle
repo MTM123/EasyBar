@@ -28,6 +28,7 @@ dependencies {
     compileOnly 'com.destroystokyo.paper:paper-api:1.12.2-R0.1-SNAPSHOT'
     compileOnly 'com.comphenix.protocol:ProtocolLib:4.4.0'
     compileOnly 'us.myles:viaversion:2.1.1'
+    compileOnly 'de.gerrygames:viarewind-bukkit:1.4.2'
 }
 
 import org.apache.tools.ant.filters.ReplaceTokens

@@ -7,7 +7,11 @@ import com.comphenix.protocol.wrappers.WrappedAttribute;
 import com.comphenix.protocol.wrappers.WrappedDataWatcher;
 import com.comphenix.protocol.wrappers.WrappedWatchableObject;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.boss.BarColor;
+import org.bukkit.boss.BarStyle;
+import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -24,6 +28,25 @@ public class PlayerListener implements Listener {
 
     @EventHandler
     public void onInteract(PlayerInteractEvent event) {
+
+        BossBar bar = Bukkit.createBossBar("test", BarColor.GREEN, BarStyle.SOLID);
+        bar.setVisible(true);
+        bar.addPlayer(event.getPlayer());
+        bar.setTitle(ChatColor.translateAlternateColorCodes('&', "&4This sucks!"));
+
+        if (true) {
+            return;
+        }
+
+/*        BossBar bar = EasyBar.getInstance().getBossBarManager().createBossBar(event.getPlayer());
+
+        bar.setText("TESTING");
+        bar.setProgress(0.5f);
+        bar.setVisible(true);
+
+        if (true) {
+            return;
+        }*/
 
 /*        System.out.println("test");
 

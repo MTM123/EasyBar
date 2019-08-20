@@ -1,7 +1,7 @@
 name: EasyBar
 version: @version@
 main: lv.mtm123.easybar.EasyBar
-softdepend: [ProtocolLib, ViaVersion]
+softdepend: [ProtocolLib, ViaVersion, ViaRewind]
 authors: [MTM123]
 description: Lib to provide easy display of boss bar to multiple version clients
 website: https://mtm123.lv
